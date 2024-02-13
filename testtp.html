@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire </title>
+</head>
+<style>
+    body {
+    width: 80%;
+    margin: 0 auto;
+    border-collapse: separate;
+    border-spacing: 10px; 
+    background:rgba(244, 248, 34, 0.68);
+    
+    }
+</style>
+<body>
+    <h1 align="center"> Votre Commande </h1>
+    
+    <form method"=post" > 
+        
+        
+        <input list="browsers" name="browser" /> pour <input type="number"name="quantity" min="1" max="100" /> personnes livrees a <input type="time" name="rdv_time" />
+        <datalist id="browsers">
+        <option value="boulet/frit">
+        <option value="VH">
+        <option value="tajine/frit ">
+        <option value="rfisa">
+        <option value="Safari">
+        </datalist>
+        <br>
+        <br>
+        <table border="0" >
+        <tbody>
+            <tr>
+            <td>
+        <br><br>
+        <label for="texte"> Avec :</label>
+        <br>
+        <input type="checkbox" value="p1"  > de l'huile piquante  <br/>
+        <input type="checkbox" value="p2"  > du ketchup <br/>
+        <input type="checkbox" value="p3" > de la moutarde  <br/>
+        <input type="checkbox" value="p3" > de la mayonnaise <br/>
+        <br>
+    </td>
+<td>&nbsp;&nbsp;
+        <label for="email"> Paiement par :</label>
+        <br>
+        &nbsp;<input type="radio" value="p1" name="p1" > Carte Bleue  <br/>
+        &nbsp;<input type="radio" value="p2" name="p1" > Carte visa <br/>
+        &nbsp;<input type="radio" value="p3" name="p1" > Master card  <br/>
+        <br>
+    </td>
+        <td>
+            &nbsp;&nbsp;<label for="email"> Code :</label>
+            &nbsp;<INPUT type="password" size="x" maxlength="m" name="label" value="texte">
+        </td>
+    </tr>
+        </tbody>
+    </table>
+        <br>
+        <label for="texte"> Votre adresse </label>
+        <br>
+        <textarea name="nom" cols="15" rows="5"></textarea>
+        <br><br>
+    
+    
+        <label for="texte">Attachez-un plan</label> 
+        <input type="file" id="fichier" name="fichier" accept=".pdf, .doc, .docx"><br><br>
+
+
+        
+        <br>
+        <table>
+       <tbody align="center">
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="submit" value=" Commander">
+        &nbsp;
+        <input type="reset" value=" Effacer"> 
+        &nbsp;
+        <input type="reset" value=" Informations">  
+       </tbody>
+        </table>
+
+        
+    
+    </form>
+
+</body>
+</html>
